@@ -1,4 +1,7 @@
+package OOPBasics;
+
 public class Person {
+
     String name;
     int age;
     char gender;
@@ -13,3 +16,5 @@ public class Person {
         System.out.println("Hello, I am " + name + " and " + age + " years old.");
     }
 }
+
+

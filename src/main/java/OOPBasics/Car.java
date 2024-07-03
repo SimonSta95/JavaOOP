@@ -1,3 +1,5 @@
+package OOPBasics;
+
 public class Car {
     String Brand;
     String Model;
@@ -23,12 +25,12 @@ public class Car {
     }
 
     public void startCar() {
-        System.out.println("Car started");
+        System.out.println("OOPBasics.Car started");
         isStarted = true;
     }
 
     public void stopCar() {
-        System.out.println("Car has stopped");
+        System.out.println("OOPBasics.Car has stopped");
         isStarted = false;
     }
 
@@ -38,7 +40,7 @@ public class Car {
             System.out.println("Speed: " + this.speed);
 
         } else {
-            System.out.println("Car is not started yet.");
+            System.out.println("OOPBasics.Car is not started yet.");
         }
     }
 }

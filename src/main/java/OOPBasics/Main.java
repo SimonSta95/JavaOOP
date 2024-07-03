@@ -1,3 +1,5 @@
+package OOPBasics;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -11,6 +13,7 @@ public class Main {
         secondCar.stopCar();
         secondCar.accelerateCar();
 
+        //Bonus
         Person Simon = new Person("Simon", 29, 'm');
         Simon.introducePerson();
 
