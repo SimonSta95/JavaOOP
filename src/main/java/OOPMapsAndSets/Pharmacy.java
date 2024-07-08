@@ -33,7 +33,7 @@ public class Pharmacy {
     }
 
     public void printStorage(){
-        System.out.println("Items in storrage: ");
+        System.out.println("Items in storage: ");
         for(Map.Entry<String,Medication> entry : storage.entrySet()){
             System.out.println(entry.getKey() + ": " + entry.getValue().toString());
         }
