@@ -16,6 +16,6 @@ public class Counter {
     @Override
     public String toString() {
         return "instanceCount=" + instanceCount +
-                "totalCount=" + totalCount;
+                " totalCount=" + totalCount;
     }
 }
