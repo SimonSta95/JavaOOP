@@ -6,32 +6,26 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //1
-        ArrayList<Student> list = new ArrayList<>();
-        Student JohnDoe = new Student("John", "Doe", 1998);
-        Student JaneDoe = new Student("Jane", "Doe", 1997);
-        Student MaxMustermann = new Student("Max", "Mustermann", 1996);
-
-        list.add(JohnDoe);
-        list.add(JaneDoe);
-        list.add(MaxMustermann);
-
-        //2
-        School school = new School();
-        school.addStudent(JohnDoe);
-        school.addStudent(JaneDoe);
-        school.addStudent(MaxMustermann);
-        school.printStudents();
-        System.out.println(school + "\n");
+        School mySchool = new School();
+        mySchool.addStudent(new Student("John", "Doe", 1998));
+        mySchool.addStudent(new Student("Jane", "Doe", 1997));
+        mySchool.addStudent(new Student("Max", "Mustermann", 1996));
+        mySchool.printStudents();
+        System.out.println(mySchool + "\n");
 
         //3
-        school.getStudent(1998);
-        school.removeStudent(MaxMustermann);
-        school.printStudents();
+        mySchool.getStudent(1998);
+        mySchool.removeStudent(new Student("Max", "Mustermann", 1996));
+        mySchool.printStudents();
 
         //Bonus 1
         Course maths = new Course("Maths", "Dr. Mothagy", "A01");
-        JohnDoe.addCourse(maths);
-        school.getCourses(1998);
+        Student searchStudent = mySchool.getStudent(1998);
+        if (searchStudent != null) {
+            System.out.println("Student found!: " + searchStudent);
+            searchStudent.addCourse(maths);
+            mySchool.getCourses(1998);
+        }
+
     }
 }
