@@ -48,6 +48,7 @@ public class Main {
 
         //Bonus
         csvReader();
+        System.out.println("hahahihi");
 
     }
 
