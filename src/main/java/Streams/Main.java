@@ -48,8 +48,6 @@ public class Main {
 
         //Bonus
         csvReader();
-        System.out.println("hahahihi");
-
     }
 
     public static void csvReader() throws IOException {
